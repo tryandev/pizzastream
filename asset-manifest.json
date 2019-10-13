@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/pizzastream/static/css/main.191bc970.chunk.css",
+    "main.js": "/pizzastream/static/js/main.220025fc.chunk.js",
+    "main.js.map": "/pizzastream/static/js/main.220025fc.chunk.js.map",
+    "runtime-main.js": "/pizzastream/static/js/runtime-main.4c0f3dc6.js",
+    "runtime-main.js.map": "/pizzastream/static/js/runtime-main.4c0f3dc6.js.map",
+    "static/js/2.dbf5e2d8.chunk.js": "/pizzastream/static/js/2.dbf5e2d8.chunk.js",
+    "static/js/2.dbf5e2d8.chunk.js.map": "/pizzastream/static/js/2.dbf5e2d8.chunk.js.map",
+    "index.html": "/pizzastream/index.html",
+    "precache-manifest.cae1e5bfdaa65a1447b45431a10369d4.js": "/pizzastream/precache-manifest.cae1e5bfdaa65a1447b45431a10369d4.js",
+    "service-worker.js": "/pizzastream/service-worker.js",
+    "static/css/main.191bc970.chunk.css.map": "/pizzastream/static/css/main.191bc970.chunk.css.map",
+    "static/media/App.css": "/pizzastream/static/media/loading2.590281fa.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c0f3dc6.js",
+    "static/js/2.dbf5e2d8.chunk.js",
+    "static/css/main.191bc970.chunk.css",
+    "static/js/main.220025fc.chunk.js"
+  ]
+}

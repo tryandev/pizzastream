@@ -158,7 +158,7 @@ li:not(.current) .desc {
 .prompt {
 	padding: 52px 0 43px;
 	font-size: 1.45em;
-	font-weight: bold;
+	font-weight: 600;
 }
 
 .prompt p {

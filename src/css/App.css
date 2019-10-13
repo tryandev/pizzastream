@@ -1,0 +1,278 @@
+@font-face {
+	font-family: 'Avenir Next';
+	src: url(../fonts/AvenirNextLTPro-Regular.otf);
+}
+
+@font-face {
+	font-family: 'Avenir Next Demi';
+	src: url(../fonts/AvenirNextLTPro-Demi.otf);
+}
+ 
+html { height: 100%; }
+
+body {
+	color: #565554;
+	margin: 0;
+	padding: 0;
+	background: #DA593F;
+	text-align: center;
+  font: 20px 'Avenir Next';
+  height: 100%;
+}
+
+body::before {
+	content: '';
+	background: url(../img/background2.png) top center;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	opacity: 0.3;
+	z-index: -1;
+	left: 0;
+}
+
+header {
+  width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 150px;
+	background-color: #F6F5AE;
+}
+
+header img{
+	padding: 0 0 10px 0;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	box-shadow: 0 0 4px 0px #0006;
+	min-height: 100%;
+	margin: 0 auto;
+	width: 960px;
+	background-color: #FFF;
+}
+
+.process { 
+  overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+  background-color: #D8D8D8;
+  height: 469px;
+  transition: height 0.5s;
+}
+
+.process.finished {
+  height: 0;
+}
+
+.process li {
+	background-color: #FFF;
+	width: 320px;
+	height: 469px;
+	margin-left: -1px;
+  border-left: solid 1px #d8d8d8;
+}
+
+.process .title {
+	font-family: 'Avenir Next Demi';
+	margin: 25px 0 26px;
+}
+
+.process .step {
+	font-size: 1.4em;
+	font-weight: bold;	
+	color: #FFF;
+	height: 50px;
+	background-color: #EBEBEB;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.process .step span {
+  padding: 0 8px 2px 0;
+}
+
+.process .logo {
+	margin: 0 auto;
+	background-color: #EBEBEB;
+	display: flex;
+	width: 200px;
+	height: 200px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+}
+
+.process .desc {
+	margin: 27px 0;
+}
+.step, .logo, .desc  {
+  transition: opacity 1s, background-color 1s;
+}
+
+.current .step,
+.current .logo, 
+.done .step,
+.done .logo  {
+  background-color: #2E86AB;
+}
+
+.done:not(.current) .step,
+.done:not(.current) .logo,
+li:not(.current) .desc { 
+	opacity: 0.5; 
+}
+
+.loader {
+	width: 100%;
+	background-color: #525252;
+	height: 50px;
+  transition: opacity 3s, background-color 3s;
+}
+
+.loader.finished {
+	opacity: 0.5;
+  background-color: #2E86AB;
+}
+
+.loader div {
+	background-image: url(../img/loading2.gif);
+	opacity: 0.8;
+	width: 100%;
+	height: 100%;
+  transition: opacity 2s;
+}
+
+.loader.finished div {
+	opacity: 0.0;
+}
+
+.prompt {
+	padding: 52px 0 43px;
+	font-size: 1.45em;
+	font-weight: bold;
+}
+
+.prompt p {
+	letter-spacing: .02em;
+	margin: 23px 0 0;
+}
+
+.prompt h2 {
+	font-family: 'Avenir Next Demi';
+	font-size: 1.38em;
+	margin: 0;
+}
+
+.time {
+	padding: 10px 0 30px;
+}
+
+.time h2 {
+	font-size: 1.725em;
+	margin-top: 5px;
+}
+
+@media (max-width: 960px) {
+	body {
+		font-size: 6vw;
+	}
+	
+	#container {
+		width: 90vw;
+	}
+	
+	header {
+		height: 20vw;
+	}
+	
+	header img {
+		padding: 0;
+		width: 20vw;
+	}
+
+	.process { 
+		font-size: 0.8em;
+		flex-direction: column;
+		background-color: unset;
+		height: auto;
+	}
+  
+	.process.finished {
+		height: auto;
+	}
+	
+	.process li {
+    overflow: hidden;
+    transition: height 0.25s, margin-bottom 0.25s;
+		width: auto;
+		height: 13em;
+		margin: 0 0.7em 1em;
+		border: 0;
+	}
+	
+	.process .step {
+		font-size: 1.4em;
+		height: 1.6em;
+		border-radius: 0.43em;
+	}
+
+	.process .logo {
+		width: 7em;
+		height: 5em;
+	}
+	
+	.process img {
+		height: 3em;
+	}
+	
+	.process .title,
+	.process .desc {
+		margin: .8em 0;
+	}
+	
+	.loader {
+		height: 1em;
+		margin: 0 0.7em;
+		width: auto;
+	}
+  
+	.loader.finished {
+		height: .5em;
+	}
+	
+	.loader div {
+		background-size: 20em;
+	}
+	
+	.prompt, .time {
+		padding: 1em 0;
+		font-size: .7em;
+	}
+	
+	.prompt p, 
+	.prompt h2,
+	.time p, 
+	.time h2 {
+		margin: .3em;
+	}
+  
+	.done:not(.current) {
+		height: 0px;
+		margin-bottom: 0px;
+	}
+
+	header  { order: 1 }
+	.thank  { order: 2 }
+	.loader { order: 3 }
+	.time   { order: 4 }
+	.process-section { order: 5 }
+}

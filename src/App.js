@@ -15,12 +15,13 @@ function App() {
   ]);
 
   useEffect(() => {
+    if (time > 60) return;      
     let interval = setInterval(() => {
       setTime(Math.min(time + 5, 60));
-      console.log('useEffect', time);
-    }, 1000);
+      time === 0 && clearInterval(interval);
+    }, 1000);  
     return () => clearInterval(interval);
-  }, [time, data]);
+  }, [time]);
 
   let steps = data.map(
     (el, i) => 
@@ -29,7 +30,6 @@ function App() {
         done={Math.floor(time / 20) > i} />
   );
 
-  console.log('App render ', time);
   let loaderClass = time < 60 ? "" : "finished";
   return (
     <React.Fragment>

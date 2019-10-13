@@ -5,7 +5,6 @@ const Step = React.memo(({current, done, info}) => {
     if (current) flags.push('current');
     if (done) flags.push('done');
     let {step, title, icon, desc} = info;
-    console.log("Step Render", step);  
     return (
         <li className={flags.join(' ')}>
             <div className="step"><span>{step}</span></div>

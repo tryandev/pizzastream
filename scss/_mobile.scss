@@ -1,0 +1,73 @@
+@media (max-width: 960px) {
+	body { font-size: 6vw; }
+	
+	#container { width: 90vw; }
+	
+	header {
+		height: 20vw;
+    }
+    
+    .header-img { padding: 0; width: 20vw; }
+
+    .phase-list-, .phase-list-finished { 
+		font-size: 0.8em;
+		flex-direction: column;
+		background-color: unset;
+		height: auto;
+		
+    }
+
+    .phase-item {
+        overflow: hidden;
+        @include transition(height 0.25s, margin-bottom 0.25s);
+        width: auto;
+        height: 13em;
+        margin: 0 0.7em 1em;
+        border: 0;
+    }
+
+    .phase-num {
+        font-size: 1.4em;
+        height: 1.6em;
+        @include border-radius(0.43em);
+    }
+
+    .phase-title, .phase-desc { margin: .8em 0; }
+
+    .phase-list-finished { height: auto; }
+
+    .phase-logo { width: 7em; height: 5em; }
+
+    .phase-img { height: 3em; }
+	
+    .loader-, .loader-finished {
+        @include border-radius(0.25em);
+		height: 1em;
+		margin: 0 0.7em;
+		width: auto;
+    }
+
+    .loader-finished { height: .5em; @include border-radius(0.125em) }
+    
+    .loader-ani- { background-size: 20em; @include border-radius(0.25em) }
+	
+	.prompt, .time {
+		padding: 1em 0;
+		font-size: .7em;
+	}
+
+	.prompt, .time {
+		p, h2 { margin: .3em; }
+	}
+  
+	.phase-item.phase-done {
+		height: 0px;
+		margin-bottom: 0px;
+	}
+
+	header  { order: 1 }
+	.thank  { order: 2 }
+	.loader-, .loader-finished { order: 3 }
+	.time   { order: 4 }
+	.phase-section { order: 5 }
+}

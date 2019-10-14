@@ -1,18 +1,15 @@
 import React from 'react';
 
-const Step = React.memo(({current, done, info}) => {  
-    let flags = [];
-    if (current) flags.push('current');
-    if (done) flags.push('done');
+const Step = React.memo(({phase, info}) => {  
     let {step, title, icon, desc} = info;
     return (
-        <li className={flags.join(' ')}>
-            <div className="step"><span>{step}</span></div>
-            <p className="title">{title}</p>
-            <div className="logo">
-                <img src={icon} alt="logo"/>
+        <li className={'phase-item ' + phase}>
+            <div className={'phase-num ' + phase}><span>{step}</span></div>
+            <p className="phase-title">{title}</p>
+            <div className={'phase-logo ' + phase}>
+                <img src={icon} alt="logo" className="phase-img" />
             </div>
-            <p className="desc">{desc}</p>
+            <p className={'phase-desc ' + phase}>{desc}</p>
         </li>
     );
 });

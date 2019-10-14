@@ -24,34 +24,49 @@ function App() {
   }, [time]);
 
   let steps = data.map(
-    (el, i) => 
-      <Step key={i} info={el}
-        current={Math.floor(time / 20) === i} 
-        done={Math.floor(time / 20) > i} />
+    (el, i) => {
+      let phase = Math.floor(time / 20);
+      if (phase === i) {
+        phase = 'phase-current';
+      } else if (phase > i) {
+        phase = 'phase-done';
+      } else {
+        phase = '';
+      }
+      return (
+        <Step key={i} info={el} phase={phase} />
+      );
+    }
   );
 
   let loaderClass = time < 60 ? "" : "finished";
   return (
     <React.Fragment>
+
       <header>
-        <img src={logo} alt="logo" />
+        <img className="header-img" src={logo} alt="logo" />
       </header>
+
       <section className="prompt thank">
         <h2>Thanks for your order!</h2>
         <p>See below for the status of your pizza.</p>
       </section>
-      <section className="process-section">
-        <ul className={`process ${loaderClass}`}>
+
+      <section className="phase-section">
+        <ul className={`phase-list-${loaderClass}`}>
           {steps}
         </ul>
       </section>
-      <section className={`loader ${loaderClass}`}>
-        <div></div>
+
+      <section className={`loader-${loaderClass}`}>
+        <div className={`loader-ani-${loaderClass}`}></div>
       </section>
+
       <section className="prompt time">
         <p>{time < 60 ? 'It’ll take about' : "Order complete"}</p>
         <h2>{time < 60 ? `${60 - time} minutes` : "Pizza delivered"}</h2>
       </section>	
+
     </React.Fragment>
   );
 }

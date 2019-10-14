@@ -15,7 +15,8 @@ body {
   padding: 0;
   background: #DA593F url(../img/background2.png) top center;
   text-align: center;
-  font: 20px 'AvenirNext';
+  font-size: 20px;
+  font-family: 'AvenirNext', Arial, Helvetica, sans-serif;
   height: 100%; }
   body::before {
     content: '';
@@ -99,7 +100,7 @@ header {
     padding: 0 8px 2px 0; }
 
 .phase-title {
-  font-family: 'AvenirNextDemi';
+  font-family: 'AvenirNextDemi', 'AvenirNext', Arial, Helvetica, sans-serif;
   margin: 25px 0 26px; }
 
 .phase-logo {

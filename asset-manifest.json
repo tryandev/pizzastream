@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/pizzastream/static/css/main.191bc970.chunk.css",
-    "main.js": "/pizzastream/static/js/main.67a8c5e2.chunk.js",
-    "main.js.map": "/pizzastream/static/js/main.67a8c5e2.chunk.js.map",
+    "main.css": "/pizzastream/static/css/main.fe618190.chunk.css",
+    "main.js": "/pizzastream/static/js/main.043392b0.chunk.js",
+    "main.js.map": "/pizzastream/static/js/main.043392b0.chunk.js.map",
     "runtime-main.js": "/pizzastream/static/js/runtime-main.4c0f3dc6.js",
     "runtime-main.js.map": "/pizzastream/static/js/runtime-main.4c0f3dc6.js.map",
     "static/js/2.dbf5e2d8.chunk.js": "/pizzastream/static/js/2.dbf5e2d8.chunk.js",
     "static/js/2.dbf5e2d8.chunk.js.map": "/pizzastream/static/js/2.dbf5e2d8.chunk.js.map",
     "index.html": "/pizzastream/index.html",
-    "precache-manifest.c2c691220e19526391a154226ce04344.js": "/pizzastream/precache-manifest.c2c691220e19526391a154226ce04344.js",
+    "precache-manifest.2435769b126fe088025d39383ab8ab8d.js": "/pizzastream/precache-manifest.2435769b126fe088025d39383ab8ab8d.js",
     "service-worker.js": "/pizzastream/service-worker.js",
-    "static/css/main.191bc970.chunk.css.map": "/pizzastream/static/css/main.191bc970.chunk.css.map",
+    "static/css/main.fe618190.chunk.css.map": "/pizzastream/static/css/main.fe618190.chunk.css.map",
     "static/media/App.css": "/pizzastream/static/media/loading2.590281fa.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.4c0f3dc6.js",
     "static/js/2.dbf5e2d8.chunk.js",
-    "static/css/main.191bc970.chunk.css",
-    "static/js/main.67a8c5e2.chunk.js"
+    "static/css/main.fe618190.chunk.css",
+    "static/js/main.043392b0.chunk.js"
   ]
 }

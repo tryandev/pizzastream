@@ -37,14 +37,15 @@ because using two divs for one background is inefficient and too far from a real
         - [x] **Option 1:** Re-tile the pizza slice in photoshop to match the mock up. The first 3 slices of pizza in the top left match exactly, 
 but the rest of the tiling in the mock up is inconsistent, so the rest of the slices can't be matched.
         - [ ] **Option 2:** Don't touch the asset, instead use a background linear gradient trick in css:
-This will get you a 2x2 version of the image with only the top-left slice visible, then that 2x2 is tiled. This would only get the implementation somewhat close without changing the asset at all. (See difference map)
+This will get you a 2x2 version of the image with only the top-left slice visible, then that 2x2 is tiled. This would only get the implementation somewhat close without changing the asset at all. 
+   - (See difference map)
 
 
 5) **The Animated Loader GIF**
     - The animated loader is 50px tall in the mock up. The gif provided is 41px tall. I picked one of two options:
       - [ ] **Option 1:** Stretch it up uniformly with the drawback of thicker lines and deviating from the mock up
       - [x] **Option 2:** Crop the gif to 25px tall, this height lets it tile, lets you match the thickness to mock up exactly
-    - Some css opacity blending with it's parent color is done to make the asset colors match the mockup colors exactly.
+    - Some CSS opacity blending with it's parent color is done to make the asset colors match the mockup colors exactly.
 
 
 6) **Responsive Design with Mobile Layout**

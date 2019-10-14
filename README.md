@@ -1,3 +1,6 @@
+## The final design is deployed on GitHub Pages
+### **https://tryandev.github.io/pizzastream/**
+
 # Difference map
 | Difference map (brighter pixels represent bigger difference)  |
 | ------------- | 
